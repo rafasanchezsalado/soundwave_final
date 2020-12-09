@@ -1,1 +1,112 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+/*
+#202020 nero
+#FEFEFE white
+#EDEDF1 grey
+#1BA3A4 primary
+#EFE4CF secondary
+*/
+
+/* TAGS */
+
+body, .container, .container-fluid {
+    margin: 0 auto !important;
+    padding: 0px !important;
+    height: 100vh !important;
+    font-family: 'Quicksand' !important;
+    overflow-y: hidden !important;
+}
+
+mat-tab-group {
+    font-family: 'Quicksand' !important;
+}
+
+button {
+    width: 100% !important;
+    border-radius: 50pt !important ;
+}
+
+button.btn-primary-hover:hover {
+    background-color: #FEFEFE !important;
+    color: #1BA3A4 !important;
+}
+
+input {
+    border-radius: 50pt !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* CLASSES */
+
+.container .row {
+    margin: 0 auto !important;
+}
+
+.options mat-icon:hover, .col-1 mat-icon:hover {
+    color: #1BA3A4 !important;
+}
+
+.title {
+    font-family: 'Fredoka One' !important;
+}
+
+/* BACKGROUND */
+
+.bg-black {
+    background-color: #202020 !important;
+    color: #FEFEFE !important;
+}
+
+.bg-white {
+    background-color: #FEFEFE !important;
+    color: #202020 !important;
+}
+
+.bg-grey {
+    background-color: #EDEDF1 !important;
+}
+
+.bg-primary {
+    background-color: #1BA3A4 !important;
+    color: #FEFEFE !important;
+}
+
+.bg-secondary {
+    background-color: #EFE4CF !important;
+    color: #202020 !important;
+}
+
+/* COLOR */
+
+.black {
+    color: #202020 !important;
+}
+
+.white {
+    color: #FEFEFE !important;
+}
+
+.grey {
+    color: #EDEDF1 !important;
+}
+
+.primary {
+    color: #1BA3A4 !important;
+}
+
+.secondary {
+    color: #EFE4CF !important;
+}
+
+.mat-badge-content {
+    background: #1BA3A4;
+    color: #EDEDF1;
+}
+

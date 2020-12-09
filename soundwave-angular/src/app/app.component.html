@@ -1,0 +1,155 @@
+<div class="container-fluid bg-grey">
+
+  <mat-toolbar class="bg-black shadow-sm w-100 d-flex offset-6">
+
+    <h3 class="title">
+      <mat-icon aria-hidden="false" aria-label="waves" class="align-middle mr-2">waves</mat-icon>
+      <span class="d-none d-md-inline">soundwave</span>
+    </h3>
+
+    <span class="example-spacer ml-auto"></span>
+
+    <!--     
+        <mat-form-field class="example-form-field w-25" appearance="outline">
+        <mat-label>Clearable input</mat-label>
+          <input matInput type="text" />
+       </mat-form-field> 
+      -->
+
+    <form class="mt-3">
+      <div class="form-group">
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input" />
+      </div>
+    </form>
+
+    <span class="example-spacer ml-auto"></span>
+
+    <div class="row options">
+      <div class="col text-center">
+        <button mat-raised-button class="btn bg-primary btn-primary-hover">
+          <span>
+            Upload
+            <mat-icon aria-hidden="false" aria-label="add" class="align-middle d-flex d-md-none">add</mat-icon>
+          </span>
+        </button>
+      </div>
+      <div class="col text-center">
+        <button class="btn bg-transparent grey">
+          <mat-icon aria-hidden="false" aria-label="likes" class="align-middle">favorite</mat-icon>
+        </button>
+      </div>
+      <div class="col text-center">
+        <button class="btn bg-transparent grey">
+          <mat-icon aria-hidden="false" aria-label="notifications" class="align-middle" matTooltip="Notifications"
+            matTooltipHideDelay="100000" matTooltipPosition="below" matBadge="1" matBadgeOverlap="true">
+            notifications
+          </mat-icon>
+        </button>
+      </div>
+      <div class="col text-center">
+        <button class="btn bg-transparent grey">
+          <mat-icon aria-hidden="false" aria-label="mail" class="align-middle" matTooltip="Messages"
+            matTooltipHideDelay="100000" matTooltipPosition="below" matBadge="1" matBadgeOverlap="true">
+            mail
+          </mat-icon>
+        </button>
+      </div>
+      <div class="col text-center">
+
+        <button [matMenuTriggerFor]="menu" class="btn bg-transparent" id="dropdownMenuButton" aria-haspopup="true"
+          aria-expanded="false">
+          <img src="https://picsum.photos/36" class="align-middle img-fluid w-100 rounded-circle"
+            alt="Profile dropdown">
+        </button>
+
+        <mat-menu #menu="matMenu">
+          <div mat-menu-item>
+            <mat-icon>nights_stay</mat-icon>
+            <span>Dark Mode</span>
+            <mat-slide-toggle color="primary" class="dropdown-item"></mat-slide-toggle>
+          </div>
+          <button mat-menu-item>
+            <mat-icon>settings</mat-icon>
+            <span>Settings</span>
+          </button>
+          <div class="dropdown-divider"></div>
+          <button mat-menu-item>
+            <mat-icon>exit_to_app</mat-icon>
+            <span>Log out</span>
+          </button>
+        </mat-menu>
+
+      </div>
+
+    </div>
+
+  </mat-toolbar>
+
+  <div class="container bg-white shadow-sm">
+
+    <!--     
+    <div class="row px-3 pt-4">
+      <div class="col-12 border-bottom">
+        <h2>Stream</h2>
+      </div>
+    </div> 
+  -->
+
+    <mat-tab-group mat-align-tabs="left">
+
+      <mat-tab label="Stream">
+
+        <a href="" class="">
+
+          <div class="row px-4 py-4">
+
+            <div class="col-1 d-flex justify-content-center align-items-center text-center">
+              <img src="https://picsum.photos/100" class="align-middle img-fluid w-100 rounded" alt="Profile dropdown">
+            </div>
+
+            <div class="col-7">
+              <h4 class="font-weight-bold primary">Song</h4>
+              <h5>Artist</h5>
+              <h6 class="font-weight-light">Date</h6>
+            </div>
+
+            <div class="options row w-25 d-flex justify-content-center align-items-center text-center">
+              <div class="col">
+                <button class="bg-transparent border-0">
+                  <mat-icon aria-hidden="false" aria-label="" class="align-middle">favorite_border</mat-icon>
+                </button>
+              </div>
+              <div class="col">
+                <button class="bg-transparent border-0">
+                  <mat-icon aria-hidden="false" aria-label="" class="align-middle">play_circle_outline</mat-icon>
+                </button>
+              </div>
+              <div class="col">
+                <button class="bg-transparent border-0">
+                  <mat-icon aria-hidden="false" aria-label="" class="align-middle">share</mat-icon>
+                </button>
+              </div>
+              <div class="col-12">
+                <mat-slider color="primary" class="w-100"></mat-slider>
+                <!--           
+                  <audio controls>
+                    <source src="" type="audio/mpeg">
+                  </audio> 
+                  -->
+              </div>
+
+            </div>
+
+          </div>
+
+        </a>
+
+      </mat-tab>
+
+      <mat-tab label="Explore"></mat-tab>
+
+    </mat-tab-group>
+
+  </div>
+
+</div>
